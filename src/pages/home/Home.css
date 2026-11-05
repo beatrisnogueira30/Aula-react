@@ -147,7 +147,7 @@ h1 {
 .img_categoria1 {
     background-image:
         linear-gradient(to bottom, #00000000, #00000070),
-        url(./assets/img/bolos_de_festa.png);
+        url(../../assets/img/bolos_de_festa.png);
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -183,7 +183,7 @@ h1 {
 .img_categoria2 {
     background-image:
         linear-gradient(to bottom, #00000000, #00000070),
-        url(./assets/img/tortas_francesas.png);
+        url(../../assets/img/tortas_francesas.png);
     background-size: cover;
 }
 
@@ -191,7 +191,7 @@ h1 {
     /* background-image: url(../img/bolos_caseiros.png); */
     background-image:
         linear-gradient(to bottom, #00000000, #00000070),
-        url(./assets/img/bolos_caseiros.png);
+        url(../../assets/img/bolos_caseiros.png);
 
     background-size: cover;
 }

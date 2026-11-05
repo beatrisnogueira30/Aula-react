@@ -1,13 +1,14 @@
-import Footer from "../../../components/footer/footer";
-import Header from "../../../components/header/Header";
+
 import "./Listaprodutos.css"
+import Produtos from '../../assets/img/produtos/le_grand_chocolat.png'
+import logo from '../../assets/img/logo.svg'
+import { Link } from "react-router-dom";
+
 
 function Listaprodutos() {
     return (
-
+              
         <>
-            <Header />
-
             <main>
                 <section className="prod_banner" />
                 <section className="container prod_container">
@@ -20,12 +21,12 @@ function Listaprodutos() {
                         <article className="prod_card">
                             <figure>
                                 <img
-                                    src="../img/produtos/le_grand_chocolat.png"
+                                    src={Produtos}
                                     alt="foto do produto"
                                 />
                             </figure>
                             <h2>
-                                <a href="../detProduto/index.html">Le Grand Chocolat</a>
+                                <Link to="/detalheProduto">Le Grand Chocolat</Link>
                             </h2>
                             <p className="card_desc">
                                 Mousse de chocolate belga 70%, praliné de avelãs e biscuit de cacau.
@@ -33,7 +34,7 @@ function Listaprodutos() {
                             <p className="card_rodape">
                                 <data value={185.0}>R$ 185,00 / kg</data>
                                 <span className="card_av">
-                                    <img src="../icones/user.svg" alt="icone de usuarios" />
+                                    <img src="" alt="icone de usuarios" />
                                     <data value={10}>10</data>
                                     <img src="../icones/star.svg" alt="icone de estrela" />
                                     <data value="9.5">9,5</data>
@@ -43,7 +44,6 @@ function Listaprodutos() {
                     </div>
                 </section>
             </main>
-            <Footer/>
         </>
 
     )
